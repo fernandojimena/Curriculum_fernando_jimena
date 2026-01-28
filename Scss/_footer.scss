@@ -1,0 +1,15 @@
+@import "_mixins.scss";
+@import "_variants.scss";
+
+.footer {
+	width: 100%;
+	@include centrado-horizontal;
+
+	.container-footer {
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 0px;
+		color: map-get($colors, "third");
+	}
+}

@@ -1,0 +1,21 @@
+@import '_mixins.scss';
+@import '_variants.scss';
+
+.header {
+    width: 100%;
+    padding: 20px 0px;
+    @include centrado-horizontal;
+
+    .header-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        color: map-get($colors, 'third');
+        transition: width 2s ease-in-out, color 2s ease-in-out;
+
+        &:hover {
+            width: 10%;
+            color: map-get($colors, 'primary');
+        }
+    }
+}
