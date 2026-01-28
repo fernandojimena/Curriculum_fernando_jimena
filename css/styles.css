@@ -200,8 +200,7 @@ body {
   height: 100%;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
-  gap: 30px;
+  gap: 20px;
 }
 .main .presentation .presentation-video video {
   width: 100%;
@@ -212,21 +211,12 @@ body {
   font-size: 2em;
   margin-top: 10px;
 }
-.main .presentation .presentation-profesion {
+.main .presentation .presentation-aboutme, .main .presentation .presentation-profesion {
   width: 80%;
   text-align: center;
   margin: 0 auto;
 }
-.main .presentation .presentation-profesion p {
-  color: #ff5100;
-  line-height: 2em;
-}
-.main .presentation .presentation-aboutme {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-.main .presentation .presentation-aboutme p {
+.main .presentation .presentation-aboutme p, .main .presentation .presentation-profesion p {
   color: #ececec;
   line-height: 2em;
 }
@@ -253,7 +243,7 @@ body {
   height: 100%;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding: 20px 0;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -267,7 +257,7 @@ body {
 }
 .main .technology .window {
   overflow: hidden;
-  height: 60%;
+  height: 65%;
   width: 100%;
 }
 .main .technology .window .carousel {
@@ -376,16 +366,16 @@ body {
   .container .main .project {
     height: auto;
     min-height: 0px;
-    padding: 20px 0;
-    justify-content: center;
-    gap: 20px;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    gap: 15px;
   }
-  .container .main .presentation .technology,
-  .container .main .technology .technology,
-  .container .main .project .technology {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .container .footer .container-footer {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
@@ -415,8 +405,8 @@ body {
     grid-column: 1/2;
   }
   .container .main .project {
-    height: auto;
     overflow: visible;
+    justify-content: center;
   }
   .container .main .technology {
     border-left: none;

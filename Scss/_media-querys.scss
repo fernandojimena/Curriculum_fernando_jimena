@@ -35,17 +35,21 @@
             .project {
                 height: auto;
                 min-height: 0px;
-                padding: 20px 0;
-                justify-content: center;
-                gap: 20px;
+                padding: 10px 0;
+                justify-content: space-evenly;
+                gap: 15px;
+            }
 
-                .technology {
-                    border: none;
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer {
+                .container-footer {
+                    width: 90%;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    text-align: center;
                 }
             }
-        }
     }
 
 
@@ -80,8 +84,8 @@
                 }
 
                 .project {
-                    height: auto;
                     overflow: visible;
+                    justify-content: center;
 
                 }
 
